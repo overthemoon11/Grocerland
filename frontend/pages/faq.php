@@ -9,19 +9,6 @@
     <main>
     <?php include '../components/header.php'; ?>
         <h1>HI faq</h1>
-        <h1>HI faq</h1>
-        <h1>HI faq</h1>
-        <h1>HI faq</h1>
-        <h1>HI faq</h1>
-        <h1>HI faq</h1>
-        <h1>HI faq</h1>
-        <h1>HI faq</h1>
-        <h1>HI faq</h1>
-        <h1>HI faq</h1>
-        <h1>HI faq</h1>
-        <h1>HI faq</h1>
-        <h1>HI faq</h1>
-        <h1>HI faq</h1>
     </main>
     <?php include '../components/footer.php'; ?>
 </body>
