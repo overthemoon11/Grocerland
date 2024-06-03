@@ -22,8 +22,8 @@ Route::post('cart/add/{id}', [CartController::class, 'add'])->name('cart.add');
 Route::get('/faq', [FaqController::class, 'index'])->name('faq.index');
 Route::post('/faq/post',[FaqController::class,'store'])->name('faq.store');
 Route::get('/faq/add', [FaqController::class, 'create'])->name('faq.create');
-Route::get('/faq/{id}/edit', [FAQController::class, 'edit'])->name('faq.edit');
-Route::put('/faq/{id}', [FAQController::class, 'update'])->name('faq.update');
-Route::delete('/faq/{faqId}/destroySub/{subIndex}', [FaqController::class, 'destroySub'])->name('faq.destroySub');
-Route::delete('/faq/{faqId}/destroyAns/{subIndex}', [FaqController::class, 'destroyAns'])->name('faq.destroyAns');
+Route::get('/faq/{id}/edit', [FaqController::class, 'edit'])->name('faq.edit');
+Route::put('/faq/{id}', [FaqController::class, 'update'])->name('faq.update');
 Route::delete('/faq/{id}/destroy', [FaqController::class, 'destroy'])->name('faq.destroy');
+Route::delete('/faq/{faqId}/destroySub/{subIndex}', [FaqController::class, 'destroySub'])->name('faq.destroySub');
+

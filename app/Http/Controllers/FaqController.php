@@ -94,18 +94,29 @@ class FaqController extends Controller
     
 
 
-    public function destroyAns($faqId, $subIndex)
+    public function destroy($id)
+    {
+        $faq = FAQ::findOrFail($id);
+        $faq->delete();
+
+        return redirect()->route('faq.index')->with('success', 'FAQ deleted successfully!');
+    }
+
+    /**
+     * Remove the specified subquestion and answer from storage.
+     */
+    public function destroySub($faqId, $subIndex)
     {
         $faq = FAQ::findOrFail($faqId);
         $subquestions_answers = $faq->subquestions_answers;
         
-        if (isset($subquestions_answers[$subIndex]['answer'])) {
-            unset($subquestions_answers[$subIndex]['answer']);
+        if (isset($subquestions_answers[$subIndex])) {
+            unset($subquestions_answers[$subIndex]);
             $faq->subquestions_answers = array_values($subquestions_answers); // Reindex the array
             $faq->save();
         }
 
-        return redirect()->back()->with('success', 'Answer deleted successfully.');
+        return redirect()->back()->with('success', 'Subquestion and answer deleted successfully.');
     }
 
 }

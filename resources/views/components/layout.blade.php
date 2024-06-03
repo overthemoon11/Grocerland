@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/product.css') }}">
     <link rel="stylesheet" href="{{ asset('css/productDetail.css') }}">
     <link rel="stylesheet" href="{{ asset('css/faq.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/addFaq.css') }}">
 </head>
 <body>
     <header class="main-header">
