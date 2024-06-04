@@ -1,9 +1,15 @@
 <?php
 
+
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\FaqController;
 use Illuminate\Support\Facades\Route;
+
+// authentication CRUD route
+Route::get('/login',[UserController::class,'login'])->name('user.login');
+
 
 // product CRUD route
 Route::get('/', [ProductController::class, 'index'])->name('products.index');
