@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="{{ asset('css/faq.css') }}">
     <link rel="stylesheet" href="{{ asset('css/addFaq.css') }}">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/register.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
 </head>
 
 <body>
@@ -39,7 +41,8 @@
                 <li><a href="../pages/cart.php">Order</a></li>
                 <li><a href="{{ route('faq.index') }}"
                         class="{{ Request::routeIs('faq.index') ? 'active' : '' }}">FAQ</a></li>
-                <li><a href="../pages/register.php">Sign Up</a></li>
+                <li><a href="{{ route('user.register') }}"
+                        class="{{ Request::routeIs('user.register') ? 'active' : '' }}">Sign Up</a></li>
                 <li><a href="{{ route('user.login') }}"
                         class="{{ Request::routeIs('user.login') ? 'active' : '' }}">Login</a></li>
             </ul>

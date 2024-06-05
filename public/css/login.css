@@ -3,8 +3,8 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-main {
-    background-image: url("../images/loginbackground.png");
+.login-page {
+    background-image: url("/assets/images/loginbackground.png"); /* Ensure the path is correct */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
